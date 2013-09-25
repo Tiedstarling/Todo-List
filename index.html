@@ -10,8 +10,10 @@
 	</script>
 </head>
 <body>
-<input type="text" id="input" />
-<input type="button" value="Add Todo" onclick='addText()'/>
+
+<input type='text' id='input' onkeydown="if (event.keyCode == 13)
+document.getElementById('btnSearch').click()" />
+<input type='button' onclick='addText()' value='Add To List' id="btnSearch"/>
 <p id="do"> </p>
 </body>
 </html>
